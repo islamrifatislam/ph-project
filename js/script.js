@@ -27,7 +27,7 @@ const displayVideo=(videos)=>{
     <img class="h-full w-full object-cover rounded" 
          src="${video.thumbnail}" 
          alt="${video.title}" />
-  </figure>
+  </figure >
   <div class="card-body">
     <h2 class="card-title">${video.title}</h2>
     <p>${video.description || 'No description available'}</p>
