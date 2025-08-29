@@ -43,11 +43,10 @@ const displayVideo=(videos)=>{
     <h2 class="font-bold">${video.title}</h2>
     <div class="flex">
       <p class="text-gray-400">${video.authors[0].profile_name}</p>
-      <img 
-        class="w-5" 
-        src="https://img.icons8.com/?size=96&id=09Rtcvku0e31.png" 
-        alt=""
-      />
+${video.authors[0].verified === true 
+    ? `<img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" class="w-4 h-4" alt="verified"/>`
+    : ""}
+
     </div>
   </div>
   <div>
